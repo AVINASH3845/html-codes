@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Company Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Clothing Co.</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Interested in:</label>
+                <div class="checkbox-group">
+                    <label for="shirts"><input type="checkbox" id="shirts" name="interest" value="shirts"> Shirts</label>
+                    <label for="pants"><input type="checkbox" id="pants" name="interest" value="pants"> Pants</label>
+                    <label for="accessories"><input type="checkbox" id="accessories" name="interest" value="accessories"> Accessories</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="brand">Favorite Brand:</label>
+                <select id="brand" name="brand">
+                    <option value="brandA">Brand A</option>
+                    <option value="brandB">Brand B</option>
+                    <option value="brandC">Brand C</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="visit">Date of Visit:</label>
+                <input type="date" id="visit" name="visit">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="submit-button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

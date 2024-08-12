@@ -1,294 +1,124 @@
-/* Avinash Nuthalapati 8943845 */
-* {
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	background-color: rgb(252, 252, 6);
-}
-
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	width: 800px;
-	margin: 0 auto;
-	background-color: white;
+    font-family: 'Creepy Font', Arial, sans-serif; /* Example: Gothic or horror-themed font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e6e6e6; /* Light text color */
+    width: 100%;
+    background-image: url('halloween.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
 }
-
-a:focus, a:hover {
-	font-style: italic;
-}
-
 
 header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid red;
-	background-color: white;
-}
-header h1{
-	color: #007bff;
-}
-
-header p {
-	font-size: 130%;
-	font-style: italic;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffe600; /* Yellowish text color */
+    text-align: center;
+    padding: 20px 0;
+    overflow: hidden;
 }
 
-header img {
-	float: left;
-	padding: 0 30px;
-	width: 80px;
+header h1 {
+    font-size: 3em; /* Large font size */
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for depth */
 }
 
-
-fieldset {
-	margin-bottom: .5em;
-	padding: .5em 1em;
+header h2 {
+    color: rgb(241, 3, 254);
+    font-size: 1.5em; /* Slightly smaller font size */
+    font-style: italic;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Lighter text shadow */
 }
 
-legend {
-	font-weight: bold;
-	font-size: 85%;
-	padding-bottom: .5em;
-}
-
-label, input, select {
-	font-size: 90%;
-}
-
-label {
-	float: right;
-	width: 10em;
-	text-align: right;
-}
-
-input, select {
-	width: 15em;
-	margin-left: .5em;
-	margin-bottom: .5em;
-}
-
-input:required, input[required] input:invalid {
-	border: 1px solid blue;
-}
-
-br {
-	clear: both;
-}
-
-#radio label {
-	float: none;
-}
-
-#radio input {
-	width: auto;
-	margin-left: 7em;
-}
-
-#exp_month {
-	width: 7em;
-}
-
-#exp_year {
-	width: 5em;
-}
-
-#buttons input {
-	width: 10em;
-}
-
-
-#nav_menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-
-#nav_menu ul li {
-	float: left;
-	position: relative; 
-}
-
-#nav_menu ul li a {
-	display: block;
-	width: 160px;
-	text-align: center;
-	padding: 1em 0;
-	background-color: blue;
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-
-#nav_menu ul ul {
-	display: none; 
-	position: absolute;
-	top: 100%; 
-	left: 0;
-}
-
-#nav_menu ul ul li {
-	float: none;
-	position: relative;
-}
-
-#nav_menu ul ul li a {
-	width: 160px;
-	text-decoration: none;
-	color: white;
-	background-color: blue; 
-	font-size: 90%;
-}
-
-
-#nav_menu ul li:hover > ul {
-	display: block; 
-}
-
-#nav_menu ul li a:hover {
-	background-color: red; 
-}
-
-#nav_menu ul ul li a:hover {
-	background-color: #007bff; 
-}
-
-
-#nav_menu > ul::after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-
-main {
-	clear: left;
-}
-
-
-section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
-}
-
-section h1 {
-	font-size: 150%;
-	color: red;
-	padding: .5em 0 .25em 0;
-	margin: 0;
-}
-
-
-form fieldset {
-	margin-bottom: .5em;
-}
-
-form legend {
-	font-weight: bold;
-}
-
-form label {
-	float: left;
-	width: 12em;
-	text-align: right;
-}
-
-form label, form input, form select {
-	font-size: 100%;
-}
-
-form input[type=text], form input[type=email], form select {
-	width: 15em;
-	margin-left: .5em;
-	margin-bottom: 1em;
-}
-
-form input[type=radio] {
-	width: 2em;
-	margin-left: 7em;
-	margin-bottom: 1em;
-}
-
-#buttons {
-    text-align: center;  
-    margin-top: 10px;
-}
-
-#buttons input {
-    width: 8em;
-    margin: 5px;
-}
-
-form input[type=submit], form input[type=reset] {
-	width: 8em;
-	margin: 5px 40px;
-}
-
-aside {
-	color: indigo;
-	width: 215px;
-	float: left;
-	padding: 0 0 20px 20px;
-}
-
-aside table {
+.full-width-image {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-aside th, aside td {
-    border: 1px solid black;
-    padding: 5px;
-    text-align: left;
+.container {
+    display: flex;
 }
 
-aside th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
 }
 
-aside caption {
-    font-size: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: left;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
- h2 {
-	color: orangered;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+.sidebar li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
- h3 {
-	color: hsl(0, 90%, 50%);
-	font-size: 105%;
-	padding-bottom: .25em;
+.sidebar li strong {
+    color: #ffcc00; /* Yellowish */
+    font-size: 1.1em;
 }
 
-aside img {
-	padding: 1em 0;
-	width: 100px;
+.sidebar li a {
+    color: #66b3ff; /* Light blue link color */
+    text-decoration: none;
 }
 
+.sidebar li a:hover,
+.sidebar li a:focus {
+    color: #ff9966; /* Light orange on hover/focus */
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+}
+
+.main-content h2 {
+    color: #ffcc00; /* Yellowish */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for depth */
+}
+
+.main-content h3,
+.main-content h4 {
+    margin-bottom: 10px;
+}
+
+.main-content h3 {
+    color: #66b3ff; /* Light blue */
+}
+
+.main-content h4 {
+    color: #ff9966; /* Light orange */
+}
+
+.main-content p {
+    color: hsl(82, 57%, 55%); /* Light grayish text */
+}
+
+.main-link {
+    color: #66b3ff; /* Light blue link color */
+    text-decoration: none;
+}
+
+.main-link:hover,
+.main-link:focus {
+    color: #ff9966; /* Light orange on hover/focus */
+}
 
 footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: #e6e6e6; /* Light text color */
+    text-align: center;
+    padding: 10px 0;
     clear: both;
-    margin-top: 20px; 
-}
-
-
-#footer-box {
-    background-color: blue; 
-    color: white;           
-    padding: 10px;          
-    border: 2px solid blue; 
-    text-align: center;     
-    width: 100%;            
-    box-sizing: border-box; 
+    font-size: 0.8em;
 }
