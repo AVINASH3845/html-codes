@@ -1,0 +1,294 @@
+/* Avinash Nuthalapati 8943845 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: rgb(252, 252, 6);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+a:focus, a:hover {
+	font-style: italic;
+}
+
+
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid red;
+	background-color: white;
+}
+header h1{
+	color: #007bff;
+}
+
+header p {
+	font-size: 130%;
+	font-style: italic;
+}
+
+header img {
+	float: left;
+	padding: 0 30px;
+	width: 80px;
+}
+
+
+fieldset {
+	margin-bottom: .5em;
+	padding: .5em 1em;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 85%;
+	padding-bottom: .5em;
+}
+
+label, input, select {
+	font-size: 90%;
+}
+
+label {
+	float: right;
+	width: 10em;
+	text-align: right;
+}
+
+input, select {
+	width: 15em;
+	margin-left: .5em;
+	margin-bottom: .5em;
+}
+
+input:required, input[required] input:invalid {
+	border: 1px solid blue;
+}
+
+br {
+	clear: both;
+}
+
+#radio label {
+	float: none;
+}
+
+#radio input {
+	width: auto;
+	margin-left: 7em;
+}
+
+#exp_month {
+	width: 7em;
+}
+
+#exp_year {
+	width: 5em;
+}
+
+#buttons input {
+	width: 10em;
+}
+
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+	position: relative; 
+}
+
+#nav_menu ul li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+#nav_menu ul ul {
+	display: none; 
+	position: absolute;
+	top: 100%; 
+	left: 0;
+}
+
+#nav_menu ul ul li {
+	float: none;
+	position: relative;
+}
+
+#nav_menu ul ul li a {
+	width: 160px;
+	text-decoration: none;
+	color: white;
+	background-color: blue; 
+	font-size: 90%;
+}
+
+
+#nav_menu ul li:hover > ul {
+	display: block; 
+}
+
+#nav_menu ul li a:hover {
+	background-color: red; 
+}
+
+#nav_menu ul ul li a:hover {
+	background-color: #007bff; 
+}
+
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+main {
+	clear: left;
+}
+
+
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+
+section h1 {
+	font-size: 150%;
+	color: red;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+
+form fieldset {
+	margin-bottom: .5em;
+}
+
+form legend {
+	font-weight: bold;
+}
+
+form label {
+	float: left;
+	width: 12em;
+	text-align: right;
+}
+
+form label, form input, form select {
+	font-size: 100%;
+}
+
+form input[type=text], form input[type=email], form select {
+	width: 15em;
+	margin-left: .5em;
+	margin-bottom: 1em;
+}
+
+form input[type=radio] {
+	width: 2em;
+	margin-left: 7em;
+	margin-bottom: 1em;
+}
+
+#buttons {
+    text-align: center;  
+    margin-top: 10px;
+}
+
+#buttons input {
+    width: 8em;
+    margin: 5px;
+}
+
+form input[type=submit], form input[type=reset] {
+	width: 8em;
+	margin: 5px 40px;
+}
+
+aside {
+	color: indigo;
+	width: 215px;
+	float: left;
+	padding: 0 0 20px 20px;
+}
+
+aside table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+aside th, aside td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+aside th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+aside caption {
+    font-size: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+ h2 {
+	color: orangered;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+ h3 {
+	color: hsl(0, 90%, 50%);
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding: 1em 0;
+	width: 100px;
+}
+
+
+footer {
+    clear: both;
+    margin-top: 20px; 
+}
+
+
+#footer-box {
+    background-color: blue; 
+    color: white;           
+    padding: 10px;          
+    border: 2px solid blue; 
+    text-align: center;     
+    width: 100%;            
+    box-sizing: border-box; 
+}

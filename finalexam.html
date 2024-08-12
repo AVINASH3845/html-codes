@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Avinash Nuthalapati, 8943845 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Lecture</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <header>
+        <img src="order.jpg" alt="Order Now" width="80">
+        <h1>Dinosaur Lecture</h1>
+        <p>Don't Miss The Fun!</p>
+    </header>
+
+ 
+    <nav id="nav_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Day 1</a>
+                    <ul class="submenu">
+                        <li><a href="#">Video 1</a></li>
+                        <li><a href="#">Video 2</a></li>
+                        <li><a href="#">Sound 1</a></li>
+                        <li><a href="#">Sound 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Day 2</a>
+                    <ul class="submenu">
+                        <li><a href="#">Video 1</a></li>
+                        <li><a href="#">Video 2</a></li>
+                        <li><a href="#">Sound 1</a></li>
+                        <li><a href="#">Sound 2</a></li>
+                    </ul></li>
+                
+                <li><a href="#">Day 3</a>
+                    <ul class="submenu">
+                        <li><a href="#">Video 1</a></li>
+                        <li><a href="#">Video 2</a></li>
+                        <li><a href="#">Sound 1</a></li>
+                        <li><a href="#">Sound 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Day 4</a>
+                    <ul class="submenu">
+                        <li><a href="#">Video 1</a></li>
+                        <li><a href="#">Video 2</a></li>
+                        <li><a href="#">Sound 1</a></li>
+                        <li><a href="#">Sound 2</a></li>
+                    </ul>
+                </li>
+            </ul>   
+    </nav>
+
+    <main>
+
+        <aside>
+            <h2>Find out more</h2>
+            <img src="poster.png" alt="Lecture Poster">
+            <table>
+                <caption>Lecture Timings</caption>
+                <tr>
+                    <th>Lecture</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Dino Intro</td>
+                    <td>9:00 am</td>
+                </tr>
+                <tr>
+                    <td>Dino Advanced</td>
+                    <td>11:00 am</td>
+                </tr>
+            </table>
+        </aside>
+        
+        
+        <section>
+            <h2>Order Form</h2>
+            <form>
+               
+                <fieldset>
+                    <legend>Tickets</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+              
+                <fieldset>
+                    <legend>Payment Type</legend>
+                    <label for="mastercard">Master Card</label>
+                    <input type="radio" id="mastercard" name="payment" value="mastercard" required>
+                    <br>
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="visa" name="payment" value="visa" required>
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend>Order Recordings</legend>
+                    <label for="order">Order</label>
+                    <select id="order" name="order" required>
+                        <option value="video">Video</option>
+                        <option value="sound">Sound</option>
+                        <option value="both">Both</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send Us Your Order</legend>
+                    <div id="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset Fields">
+                    </div>
+                </fieldset>
+                
+            </form>
+        </section>
+
+     
+        <section>
+            <h2>Samples</h2>
+            <audio controls>
+                <source src="sjv_welcome.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <video controls width="320">
+                <source src="sjv_speakers_sampson.mp4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div id="footer-box">
+        <p>&copy;12th Aug 2024, Avinash Nuthalapati 8943845</p>
+    </div>
+    </footer>
+</body>
+</html>
